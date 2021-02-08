@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="355.0" prefWidth="464.0" styleClass="background" stylesheets="@styles/style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycalc.controller.Controller">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="463.0" minWidth="10.0" prefWidth="463.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints maxHeight="88.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="88.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="88.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="88.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="88.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="88.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Button fx:id="but1" mnemonicParsing="false" prefHeight="73.0" prefWidth="120.0" text="1" GridPane.rowIndex="2" />
+        <Button fx:id="but2" mnemonicParsing="false" prefHeight="73.0" prefWidth="120.0" text="2" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets left="120.0" />
+            </GridPane.margin>
+        </Button>
+        <Button fx:id="but3" mnemonicParsing="false" prefHeight="73.0" prefWidth="120.0" text="3" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets left="240.0" />
+            </GridPane.margin>
+        </Button>
+        <Button mnemonicParsing="false" text="Button" GridPane.rowIndex="3" />
+        <Button mnemonicParsing="false" text="Button" GridPane.rowIndex="3" />
+        <Button mnemonicParsing="false" prefHeight="73.0" prefWidth="120.0" text="Button" GridPane.rowIndex="3" />
+        <Button fx:id="but4" mnemonicParsing="false" prefHeight="73.0" prefWidth="120.0" text="4" GridPane.rowIndex="3" />
+        <Button fx:id="but5" mnemonicParsing="false" prefHeight="73.0" prefWidth="120.0" text="5" GridPane.rowIndex="3">
+            <GridPane.margin>
+                <Insets left="120.0" />
+            </GridPane.margin>
+        </Button>
+        <Button fx:id="but6" mnemonicParsing="false" prefHeight="73.0" prefWidth="120.0" text="6" GridPane.rowIndex="3">
+            <GridPane.margin>
+                <Insets left="240.0" />
+            </GridPane.margin>
+        </Button>
+        <Button fx:id="but7" mnemonicParsing="false" prefHeight="73.0" prefWidth="120.0" text="7" GridPane.rowIndex="4" />
+        <Button fx:id="but8" mnemonicParsing="false" prefHeight="73.0" prefWidth="120.0" text="8" GridPane.rowIndex="4">
+            <GridPane.margin>
+                <Insets left="120.0" />
+            </GridPane.margin>
+        </Button>
+        <Button fx:id="but9" mnemonicParsing="false" prefHeight="73.0" prefWidth="120.0" text="9" GridPane.rowIndex="4">
+            <GridPane.margin>
+                <Insets left="240.0" />
+            </GridPane.margin>
+        </Button>
+        <Button fx:id="but0" mnemonicParsing="false" prefHeight="73.0" prefWidth="120.0" text="0" GridPane.rowIndex="5">
+            <GridPane.margin>
+                <Insets left="120.0" />
+            </GridPane.margin>
+        </Button>
+        <Button fx:id="butPlus" mnemonicParsing="false" prefHeight="106.0" prefWidth="103.0" text="+" GridPane.rowIndex="6">
+            <GridPane.margin>
+                <Insets left="360.0" />
+            </GridPane.margin>
+        </Button>
+        <Button fx:id="butMinus" mnemonicParsing="false" prefHeight="73.0" prefWidth="120.0" text="-" GridPane.rowIndex="3">
+            <GridPane.margin>
+                <Insets left="360.0" />
+            </GridPane.margin>
+        </Button>
+        <Button fx:id="butMultiply" mnemonicParsing="false" prefHeight="73.0" prefWidth="120.0" text="*" GridPane.rowIndex="4">
+            <GridPane.margin>
+                <Insets left="360.0" />
+            </GridPane.margin>
+        </Button>
+      <Button fx:id="butEquals" mnemonicParsing="false" prefHeight="78.0" prefWidth="120.0" text="=" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets left="240.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="butClean" mnemonicParsing="false" prefHeight="73.0" prefWidth="120.0" text="С" GridPane.rowIndex="5" />
+      <Button fx:id="butDivision" mnemonicParsing="false" prefHeight="74.0" prefWidth="104.0" text="/" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets left="360.0" />
+         </GridPane.margin>
+      </Button>
+      <TextField fx:id="result" alignment="CENTER_RIGHT" prefHeight="75.0" prefWidth="463.0" GridPane.rowIndex="1">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </TextField>
+      <Button fx:id="comma" mnemonicParsing="false" prefHeight="80.0" prefWidth="121.0" text="." GridPane.rowIndex="6">
+         <GridPane.margin>
+            <Insets left="240.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="backSpace" mnemonicParsing="false" prefHeight="73.0" prefWidth="103.0" text="&lt;-" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="360.0" />
+         </GridPane.margin>
+      </Button>
+    </children>
+</GridPane>
